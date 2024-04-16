@@ -1,0 +1,27 @@
+{
+    "manifest_version": 2,
+    "name": "Mapsearch",
+    "version": "1.0",
+  
+    "description": "Adds map search button to google search.",
+  
+    "icons": {
+      "48": "icons/border-48.png"
+    },
+  
+    "content_scripts": [
+      {
+        "matches": ["*://www.google.com/search*"],
+        "js": ["mapsearch.js"]
+      }
+    ],
+
+    "browser_action": {
+      "default_title": "Mapsearch"
+    },
+
+    "permissions": [
+      "storage"
+    ]
+  }
+  
