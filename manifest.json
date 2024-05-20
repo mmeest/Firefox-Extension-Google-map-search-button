@@ -6,8 +6,14 @@
     "description": "Adds map search button to google search.",
   
     "icons": {
-      "48": "icons/border-48.png"
+      "48": "icons/location.png"
     },
+
+    "browser_specific_settings": {
+      "gecko": {
+        "id": "searchify@example.com"
+      }
+    },    
   
     "content_scripts": [
       {

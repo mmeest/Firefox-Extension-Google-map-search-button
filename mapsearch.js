@@ -1,8 +1,21 @@
 let mapsUrl = '';
 
 function getSearchQuery() {
-    return new URLSearchParams(window.location.search)
-        .get('q');
+    /* return new URLSearchParams(window.location.search)
+        .get('q'); */
+
+    
+
+    const params = new URLSearchParams(window.location.search);
+    const query = params.get('q');
+    
+    // Kontrolli, kas string sisaldab tühikuid
+    if (query.includes(' ')) {
+        // Asendab kõik tühikud plussmärkidega
+        return query.replace(/ /g, '+');
+    } else {
+        return query;
+    }
 }
 
 function updateMapsUrl() {
