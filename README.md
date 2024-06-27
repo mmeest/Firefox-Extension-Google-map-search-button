@@ -1,6 +1,6 @@
 <div>
   <p align="center">
-    <img src="https://github.com/mmeest/Firefox-Extension-Google-map-search-button/blob/main/qqq.png" width="700px">
+    <img src="https://github.com/mmeest/Firefox-Extension-Google-map-search-button/blob/main/firefox_2024-06-27_22-27-21.png" width="700px">
   </p>
 </div>
 
